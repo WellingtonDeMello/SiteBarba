@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BarBearia Schlickmann</title>
+    <link rel="stylesheet" href="Style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="cabecalho">
+        <div class="logo">
+            <h1>BarBearia Schlickmann</h1>
+        </div>
+
+
+        <div class="menu">
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#sobre">SoBre</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#equipe">Equipe</a></li>
+                <li><a href="#agendamento">Agendamento</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="inicio">
+        <h2>Seu estilo começa aqui</h2>
+
+        <p>
+            Cortes modernos, Barba Bem cuidada e atendimento de cair o queixo, igual o Internacional.
+        </p>
+
+        <a href="#agendamento">Agendar horário</a>
+    </section>
+
+    <section id="sobre">
+        <h2>Sobre a BarBearia</h2>
+
+        <p>
+            A Barbearia Schlickmann foi criada para oferecer cortes modernos,
+            Barba bem cuidada e um atendimento de qualidade em um ambiente
+            confortável e descontraído.
+        </p>
+
+        <p>
+            Nosso objetivo é fazer cada cliente sair daqui se sentindo melhor
+            e com um estilo que combine bem sua personalidade.
+        </p>
+    </section>
+
+    <section id="servicos" class="secao-servicos">
+        <h2>Nossos Serviços</h2>
+
+        <article>
+            <h3>Corte Masculino</h3>
+            <p>Cortes clássicos e modernos para todos os estilos.</p>
+        </article>
+
+        <article>
+            <h3>Barba</h3>
+            <p>Modelagem, acabamento e cuidado completo com a BarBa.</p>
+        </article>
+
+        <article>
+            <h3>Pacote Completo</h3>
+            <p>Corte e BarBa em um atendimento completo.</p>
+        </article>
+    </section>
+
+   
+<section id="equipe">
+    <h2>Nossa Equipe</h2>
+
+    <p class="descricao-equipe">
+        Conheça os profissionais que cuidam do seu estilo.
+    </p>
+
+    <div class="container-equipe">
+
+        <article class="card-barbeiro">
+            <img
+                src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Vini"
+                alt="Foto do barbeiro Vini Schlickmann"
+            >
+
+            <h3>Vini Schlickmann</h3>
+
+            <p>
+                Especialista em cortes clássicos,
+                modernos e acabamento de barba.
+            </p>
+        </article>
+
+        <article class="card-barbeiro">
+            <img
+                src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Robot"
+                alt="Foto do barbeiro RoBot Wagner"
+            >
+
+            <h3>RoBot Wagner</h3>
+
+            <p>
+                Especialista em barba, contornos
+                e acabamento.
+            </p>
+        </article>
+
+        <article class="card-barbeiro">
+            <img
+                src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=JP"
+                alt="Foto do barbeiro JP Felca"
+            >
+
+            <h3>JP Felca</h3>
+
+            <p>
+                Especialista em cortes modernos,
+                cabelos longos e visagismo.
+            </p>
+        </article>
+
+    </div>
+</section>
+<!-- AGENDAMENTO -->
+
+<section id="agendamento">
+    <h2>Agende seu Horário</h2>
+
+    <p>
+        Não deixe para depois! Escolha seu estilo
+        e venha renovar seu visual com a gente.
+    </p>
+
+    <a href="#contato">Agendar Agora</a>
+</section>
+
+<!-- CONTATO -->
+
+<section id="contato">
+    <h2>Entre em Contato</h2>
+
+    <p class="descricao-contato">
+        Ficou com alguma dúvida? Entre em contato conosco!
+    </p>
+
+    <div class="container-contato">
+
+        <form>
+            <label for="nome">Nome completo</label>
+            <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+                required
+            >
+
+            <label for="email">E-mail</label>
+            <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+                required
+            >
+
+            <label for="telefone">Telefone</label>
+            <input
+                type="tel"
+                id="telefone"
+                name="telefone"
+                placeholder="Digite seu telefone"
+                required
+            >
+
+            <label for="mensagem">Mensagem</label>
+            <textarea
+                id="mensagem"
+                name="mensagem"
+                rows="5"
+                placeholder="Escreva sua mensagem"
+                required
+            ></textarea>
+
+            <button type="submit">Enviar Mensagem</button>
+        </form>
+
+        <div class="mapa">
+            <h3>Onde estamos</h3>
+
+            <iframe
+                src="https://maps.google.com/maps?q=Taquara%20RS%20Brasil&z=13&output=embed"
+                width="100%"
+                height="350"
+                style="border: 0;"
+                loading="lazy"
+                allowfullscreen
+                title="Mapa de localização da barbearia">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+
+</body>
+
+</html>
