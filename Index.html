@@ -1,10 +1,14 @@
+
 <!DOCTYPE html>
 <html lang="pt-br">
 
 <head>
+    <!-- Configurações da página -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BarBearia Schlickmann</title>
+
+    <!-- Arquivo CSS e fonte do site -->
     <link rel="stylesheet" href="Style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,14 +16,15 @@
 </head>
 
 <body>
+    <!-- Cabeçalho e menu de navegação -->
     <nav class="cabecalho">
         <div class="logo">
             <h1>BarBearia Schlickmann</h1>
         </div>
 
-
         <div class="menu">
             <ul>
+                <!-- Links para as seções da página -->
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">SoBre</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -30,6 +35,7 @@
         </div>
     </nav>
 
+    <!-- Seção inicial -->
     <section id="inicio">
         <h2>Seu estilo começa aqui</h2>
 
@@ -40,6 +46,7 @@
         <a href="#agendamento">Agendar horário</a>
     </section>
 
+    <!-- Apresentação da barbearia -->
     <section id="sobre">
         <h2>Sobre a BarBearia</h2>
 
@@ -55,6 +62,7 @@
         </p>
     </section>
 
+    <!-- Serviços oferecidos -->
     <section id="servicos" class="secao-servicos">
         <h2>Nossos Serviços</h2>
 
@@ -74,142 +82,186 @@
         </article>
     </section>
 
-   
-<section id="equipe">
-    <h2>Nossa Equipe</h2>
+    <!-- Equipe de barbeiros -->
+    <section id="equipe">
+        <h2>Nossa Equipe</h2>
 
-    <p class="descricao-equipe">
-        Conheça os profissionais que cuidam do seu estilo.
-    </p>
+        <p class="descricao-equipe">
+            Conheça os profissionais que cuidam do seu estilo.
+        </p>
 
-    <div class="container-equipe">
+        <!-- Container que organiza os cartões -->
+        <div class="container-equipe">
 
-        <article class="card-barbeiro">
-            <img
-                src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Vini"
-                alt="Foto do barbeiro Vini Schlickmann"
-            >
+            <article class="card-barbeiro">
+                <!-- Foto e descrição do barbeiro -->
+                <img
+                src="assets/Style/Barbeiro Tricolor em Ação.png"
+                    alt="Foto do barbeiro Vini Schlickmann"
+                >
 
-            <h3>Vini Schlickmann</h3>
+                <h3>Vini Schlickmann</h3>
 
-            <p>
-                Especialista em cortes clássicos,
-                modernos e acabamento de barba.
-            </p>
-        </article>
+                <p>
+                    Especialista em cortes clássicos,
+                    modernos e acabamento de barba.
+                </p>
+            </article>
 
-        <article class="card-barbeiro">
-            <img
-                src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=Robot"
-                alt="Foto do barbeiro RoBot Wagner"
-            >
+            <article class="card-barbeiro">
+                <img
+                    src="assets/Style/Barbeiro ciborgue na barbearia futurista.png"
+                    alt="Foto do barbeiro RoBot Wagner"
+                >
 
-            <h3>RoBot Wagner</h3>
+                <h3>RoBot Wagner</h3>
 
-            <p>
-                Especialista em barba, contornos
-                e acabamento.
-            </p>
-        </article>
+                <p>
+                    Especialista em barba, contornos
+                    e acabamento.
+                </p>
+            </article>
 
-        <article class="card-barbeiro">
-            <img
-                src="https://placehold.co/300x300/1E3A8A/FFFFFF?text=JP"
-                alt="Foto do barbeiro JP Felca"
-            >
+            <article class="card-barbeiro">
+                <img
+                    src="assets/Style/image.jpg"
+                    alt="Foto do barbeiro JP Felca"
+                >
 
-            <h3>JP Felca</h3>
+                <h3>JP Felca</h3>
 
-            <p>
-                Especialista em cortes modernos,
-                cabelos longos e visagismo.
-            </p>
-        </article>
+                <p>
+                    Especialista em cortes modernos,
+                    cabelos longos e visagismo.
+                </p>
+            </article>
 
-    </div>
-</section>
-<!-- AGENDAMENTO -->
+        </div>
+    </section>
 
-<section id="agendamento">
-    <h2>Agende seu Horário</h2>
 
-    <p>
-        Não deixe para depois! Escolha seu estilo
-        e venha renovar seu visual com a gente.
-    </p>
+    <!-- Vídeo incorporado do YouTube -->
+    <section id="video">
+        <h2>Conheça Nosso Trabalho</h2>
 
-    <a href="#contato">Agendar Agora</a>
-</section>
+        <p>
+            Confira um pouco do universo da barbearia
+            e conheça os estilos de cortes masculinos.
+        </p>
 
-<!-- CONTATO -->
+        <div class="container-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/FDQK65XJxAk?si=YWp_hNaUbaka4o35" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </div>
+    </section>
 
-<section id="contato">
-    <h2>Entre em Contato</h2>
 
-    <p class="descricao-contato">
-        Ficou com alguma dúvida? Entre em contato conosco!
-    </p>
+    <!-- Chamada para agendamento -->
+    <section id="agendamento">
+        <h2>Agende seu Horário</h2>
 
-    <div class="container-contato">
+        <p>
+            Não deixe para depois! Escolha seu estilo
+            e venha renovar seu visual com a gente.
+        </p>
 
-        <form>
-            <label for="nome">Nome completo</label>
-            <input
-                type="text"
-                id="nome"
-                name="nome"
-                placeholder="Digite seu nome"
-                required
-            >
+        <a href="#contato">Agendar Agora</a>
+    </section>
 
-            <label for="email">E-mail</label>
-            <input
-                type="email"
-                id="email"
-                name="email"
-                placeholder="Digite seu e-mail"
-                required
-            >
+    <!-- Formulário de contato e mapa -->
+    <section id="contato">
+        <h2>Entre em Contato</h2>
 
-            <label for="telefone">Telefone</label>
-            <input
-                type="tel"
-                id="telefone"
-                name="telefone"
-                placeholder="Digite seu telefone"
-                required
-            >
+        <p class="descricao-contato">
+            Ficou com alguma dúvida? Entre em contato conosco!
+        </p>
 
-            <label for="mensagem">Mensagem</label>
-            <textarea
-                id="mensagem"
-                name="mensagem"
-                rows="5"
-                placeholder="Escreva sua mensagem"
-                required
-            ></textarea>
+        <div class="container-contato">
 
-            <button type="submit">Enviar Mensagem</button>
-        </form>
+            <!-- Campos para preencher os dados do visitante -->
+            <form>
+                <label for="nome">Nome completo</label>
+                <input
+                    type="text"
+                    id="nome"
+                    name="nome"
+                    placeholder="Digite seu nome"
+                    required
+                >
 
-        <div class="mapa">
-            <h3>Onde estamos</h3>
+                <label for="email">E-mail</label>
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Digite seu e-mail"
+                    required
+                >
 
-            <iframe
-                src="https://maps.google.com/maps?q=Taquara%20RS%20Brasil&z=13&output=embed"
-                width="100%"
-                height="350"
-                style="border: 0;"
-                loading="lazy"
-                allowfullscreen
-                title="Mapa de localização da barbearia">
-            </iframe>
+                <label for="telefone">Telefone</label>
+                <input
+                    type="tel"
+                    id="telefone"
+                    name="telefone"
+                    placeholder="Digite seu telefone"
+                    required
+                >
+
+                <label for="mensagem">Mensagem</label>
+                <textarea
+                    id="mensagem"
+                    name="mensagem"
+                    rows="5"
+                    placeholder="Escreva sua mensagem"
+                    required
+                ></textarea>
+
+                <button type="submit">Enviar Mensagem</button>
+            </form>
+
+            <!-- Mapa incorporado do Google Maps -->
+            <div class="mapa">
+                <h3>Onde estamos</h3>
+
+                <iframe
+                    src="https://maps.google.com/maps?q=Taquara%20RS%20Brasil&z=13&output=embed"
+                    width="100%"
+                    height="350"
+                    style="border: 0;"
+                    loading="lazy"
+                    allowfullscreen
+                    title="Mapa de localização da barbearia">
+                </iframe>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Rodapé com redes sociais e contato -->
+    <footer class="rodape">
+        <h2>Barbearia Schlickmann</h2>
+
+        <p>Seu estilo, nossa paixão.</p>
+
+        <div class="redes-sociais">
+            <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+            <a href="https://www.facebook.com/" target="_blank">Facebook</a>
+            <a href="https://www.tiktok.com/" target="_blank">TikTok</a>
         </div>
 
-    </div>
-</section>
+        <div class="informacoes-contato">
+            <p>Telefone: (51) 99999-6666</p>
+            <a href="https://wa.me/5551999999999" target="_blank">
+                Fale conosco pelo WhatsApp
+            </a>
+        </div>
 
+        <p class="direitos">
+            © 2026 Barbearia Schlickmann. Todos os direitos reservados.
+        </p>
+    </footer>
 
 </body>
 
 </html>
+```

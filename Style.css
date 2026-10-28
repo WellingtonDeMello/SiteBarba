@@ -1,8 +1,10 @@
 
+/* Rolagem suave ao clicar nos links do menu */
 html {
     scroll-behavior: smooth;
 }
 
+/* Inclui padding e borda no cálculo do tamanho dos elementos */
 * {
     box-sizing: border-box;
 }
@@ -34,6 +36,7 @@ nav.cabecalho {
     font-weight: 700;
 }
 
+/* Organiza os links do menu em uma linha */
 .menu ul {
     display: flex;
     gap: 35px;
@@ -46,6 +49,7 @@ nav.cabecalho {
     font-weight: 600;
 }
 
+/* Muda a cor dos links ao passar o mouse */
 .menu a:hover {
     color: #9CA3AF;
 }
@@ -54,6 +58,8 @@ nav.cabecalho {
 
 #inicio {
     min-height: 600px;
+
+    /* Imagem de fundo*/
     background: linear-gradient(
         rgba(0, 0, 0, 0.55),
         rgba(0, 0, 0, 0.55)
@@ -63,6 +69,7 @@ nav.cabecalho {
     background-size: cover;
     background-position: center;
 
+    /* Centraliza o conteúdo da seção */
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -86,6 +93,7 @@ nav.cabecalho {
     margin-bottom: 30px;
 }
 
+/* Estilização do botão de agendamento */
 #inicio a {
     display: inline-block;
     background-color: #1E3A8A;
@@ -102,7 +110,7 @@ nav.cabecalho {
     color: #111827;
 }
 
-
+/* SOBRE */
 
 #sobre {
     padding: 50px;
@@ -120,7 +128,6 @@ nav.cabecalho {
     line-height: 1.6;
 }
 
-
 /* SERVIÇOS */
 
 .secao-servicos {
@@ -135,6 +142,7 @@ nav.cabecalho {
     margin-bottom: 30px;
 }
 
+/* Estiliza cada serviço como um cartão */
 .secao-servicos article {
     display: inline-block;
     background-color: white;
@@ -153,8 +161,6 @@ nav.cabecalho {
 .secao-servicos article p {
     line-height: 1.6;
 }
-
-
 
 /* EQUIPE */
 
@@ -175,6 +181,7 @@ nav.cabecalho {
     margin-bottom: 35px;
 }
 
+/* Organiza os cartões e permite que quebrem linha */
 .container-equipe {
     display: flex;
     justify-content: center;
@@ -182,6 +189,7 @@ nav.cabecalho {
     flex-wrap: wrap;
 }
 
+/* Aparência dos cartões dos barbeiros */
 .card-barbeiro {
     background-color: white;
     width: 280px;
@@ -189,12 +197,15 @@ nav.cabecalho {
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     transition: 0.3s;
+    margin: 0px;
 }
 
+/* Eleva o cartão quando o mouse passa sobre ele */
 .card-barbeiro:hover {
     transform: translateY(-5px);
 }
 
+/* Define o tamanho e o corte das fotos */
 .card-barbeiro img {
     width: 100%;
     height: 200px;
@@ -234,6 +245,7 @@ nav.cabecalho {
     line-height: 1.6;
 }
 
+/* Estilização do botão de agendamento */
 #agendamento a {
     display: inline-block;
     background-color: #9CA3AF;
@@ -249,7 +261,6 @@ nav.cabecalho {
     background-color: white;
     transform: scale(1.05);
 }
-
 
 /* CONTATO */
 
@@ -270,6 +281,7 @@ nav.cabecalho {
     line-height: 1.6;
 }
 
+/* Organiza o formulário e o mapa lado a lado */
 .container-contato {
     display: flex;
     justify-content: center;
@@ -279,6 +291,7 @@ nav.cabecalho {
     margin: 0 auto;
 }
 
+/* Organiza os campos do formulário verticalmente */
 .container-contato form {
     display: flex;
     flex-direction: column;
@@ -291,6 +304,7 @@ nav.cabecalho {
     margin-bottom: 8px;
 }
 
+/* Estilo dos campos de texto e mensagem */
 .container-contato input,
 .container-contato textarea {
     width: 100%;
@@ -302,10 +316,12 @@ nav.cabecalho {
     font-size: 14px;
 }
 
+/* Permite redimensionar a área da mensagem verticalmente */
 .container-contato textarea {
     resize: vertical;
 }
 
+/* Estilo do botão de envio */
 .container-contato button {
     background-color: #1E3A8A;
     color: white;
@@ -334,4 +350,216 @@ nav.cabecalho {
 
 .mapa iframe {
     border-radius: 8px;
+}
+
+/* VÍDEO */
+
+#video {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: white;
+}
+
+#video h2 {
+    color: #1E3A8A;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#video p {
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+/* Centraliza o vídeo e limita sua largura */
+.container-video {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.container-video iframe {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    border: none;
+    border-radius: 10px;
+}
+
+/* RODAPÉ */
+
+.rodape {
+    background-color: #1E3A8A;
+    color: white;
+    text-align: center;
+    padding: 40px 20px 20px;
+}
+
+.rodape h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.rodape p {
+    line-height: 1.6;
+}
+
+/* Organiza os links das redes sociais */
+.redes-sociais {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+    margin: 25px 0;
+}
+
+.redes-sociais a,
+.informacoes-contato a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.redes-sociais a:hover,
+.informacoes-contato a:hover {
+    color: #9CA3AF;
+}
+
+/* Separa a informação de direitos autorais */
+.direitos {
+    border-top: 1px solid #9CA3AF;
+    margin-top: 30px;
+    padding-top: 20px;
+    font-size: 13px;
+}
+
+/* RESPONSIVIDADE - TABLETS */
+@media (max-width: 768px) {
+
+    /* Organiza o cabeçalho em coluna */
+    nav.cabecalho {
+        flex-direction: column;
+        padding: 20px;
+        gap: 15px;
+    }
+
+    .logo h1 {
+        text-align: center;
+        font-size: 22px;
+    }
+
+    /* Permite que os links ocupem mais de uma linha */
+    .menu ul {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 15px;
+        padding: 0;
+        margin: 0;
+    }
+
+    /* Reduz o título principal */
+    #inicio h2 {
+        font-size: 36px;
+    }
+
+    /* Reduz o espaçamento interno das seções */
+    #sobre,
+    .secao-servicos,
+    #equipe,
+    #contato {
+        padding: 35px 20px;
+    }
+
+    /* Coloca formulário e mapa um abaixo do outro */
+    .container-contato {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container-contato form,
+    .mapa {
+        width: 100%;
+    }
+
+    .container-video {
+        width: 100%;
+    }
+}
+
+/* RESPONSIVIDADE - CELULARES */
+@media (max-width: 425px) {
+
+    /* Ajustes do cabeçalho */
+    .logo h1 {
+        font-size: 19px;
+    }
+
+    .menu ul {
+        gap: 12px;
+    }
+
+    .menu a {
+        font-size: 13px;
+    }
+
+    /* Ajustes da seção inicial */
+    #inicio {
+        min-height: 450px;
+    }
+
+    #inicio h2 {
+        font-size: 30px;
+    }
+
+    #inicio p {
+        font-size: 15px;
+    }
+
+    /* Reduz os títulos das seções */
+    #sobre h2,
+    .secao-servicos h2,
+    #equipe h2,
+    #video h2,
+    #agendamento h2,
+    #contato h2 {
+        font-size: 26px;
+    }
+
+    /* Adapta os cartões de serviços à tela */
+    .secao-servicos article {
+        width: 100%;
+        max-width: 300px;
+        margin: 10px 0;
+    }
+
+    /* Adapta os cartões dos barbeiros */
+    .card-barbeiro {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    /* Ajustes da seção de contato */
+    #contato {
+        padding: 35px 15px;
+    }
+
+    .container-contato {
+        gap: 25px;
+    }
+
+    .mapa iframe {
+        height: 280px;
+    }
+
+    /* Ajustes do agendamento */
+    #agendamento {
+        padding: 45px 20px;
+    }
+
+    /* Ajustes do rodapé */
+    .redes-sociais {
+        gap: 15px;
+    }
+
+    .rodape h2 {
+        font-size: 21px;
+    }
 }
